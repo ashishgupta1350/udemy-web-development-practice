@@ -1,0 +1,47 @@
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table{
+    /* text-align: center;
+    border: 2px solid black; */
+    margin:auto;
+
+} 
+/* tr{
+    border:2px solid black
+} */
+tr td:nth-of-type(2)
+{
+    border-left:2px solid black;
+    border-right:2px solid black;
+
+}
+
+tr:nth-of-type(2) td:nth-of-type(2)
+{
+    border-top :2px solid black;
+    border-bottom :2px solid black;
+
+}
+tr:nth-of-type(2) td:not(:nth-of-type(2))
+{
+    border-top:2px solid black;
+    border-bottom:2px solid black;
+    
+}
+
+td{
+    
+    padding:60px;
+
+}
+
+.horizontal{
+    background-color:pink;
+}
+.vertical{
+    background:pink;
+    
+}

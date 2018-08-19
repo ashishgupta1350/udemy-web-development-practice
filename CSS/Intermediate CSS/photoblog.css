@@ -1,0 +1,14 @@
+img{
+    float:left;
+    width:30%;
+    /* height:30%; */
+    margin:1.6%;
+}
+p{
+    font-size:3.0em;
+    font-family: 'Indie Flower', sans-serif;
+    margin:auto;
+    margin-left:1.6%;
+    font-weight: 700;
+    text-transform:uppercase;
+}

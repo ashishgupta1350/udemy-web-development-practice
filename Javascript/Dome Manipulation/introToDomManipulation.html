@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dom manipulation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Hello</h1>
+    <h1>Goodbye</h1>
+    <ul>
+        <li id="highlight">List Item 1</li>
+        <li class="bolded">List Item 1</li>
+        <li class="bolded">List Item 1</li>
+
+    </ul>
+
+</body>
+</html>
+
+<!-- Loading failed for the <script> with source “http://127.0.0.1:5500/Javascript/Dome%20Manipulation/main.js”. introToDomManipulation.html:9
+        var someTags=getElementByClass("bolded")
+        ReferenceError: getElementByClass is not defined[Learn More] debugger eval code:1:5
+        var someTags=getElementByClassName("bolded")
+        ReferenceError: getElementByClassName is not defined[Learn More] debugger eval code:1:5
+        var someTags=getElementsByClassName("bolded")
+        ReferenceError: getElementsByClassName is not defined[Learn More] debugger eval code:1:5
+        var someTags=document.getElementsByClassName("bolded")
+         -->
+
+
+         <!-- console.dir(someTags[0]) -->
+
+         <!-- var tags=document.getElementsByTagName("head")
+undefined
+var tags=document.getElementsByTagName("head")[0] -->
+
+
+<!-- var h1=document.querySelector("h1")
+h1
+<h1>
+var h1=document.querySelector("#highlight")
+h1 -->

@@ -1,0 +1,124 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Registration Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Register</h1>
+    <form action="https://google.co.in">
+        <label for="firstName">First Name:</label>
+        <input required id="firstName" type="text">
+        <br>
+        <label for="lastName">Last Name:</label>
+        <input required id="lastName" type="text">
+        <br>
+        <!-- <label name="male">Made</label> -->
+        <label for="male">Male:</label>
+        <input required id="male" name="gender" type="radio" value="male">
+        <label for="female">Female:</label>
+        <input required id="female" name="gender" type="radio" value="female">
+        <br>
+        <label for="email">Email:</label>
+        <input required id="email" type="email">
+        <label for="password">Password:</label>
+        <input required id="password" type="password" pattern=".{5,10}" title="Pass must be between 5 - 10 characters long" minlength="5" maxlength="10">
+        <label for="dob">Date of Birth:</label>
+        <select>
+            <option >Month:</option>
+            <option >Jan:</option>
+            <option >Feb:</option>
+            <option >Mar:</option>
+            <option >Apr:</option>
+            <option >May:</option>
+            <option >Jun:</option>
+            <option >ul:</option>
+            <option >Aug:</option>
+            <option >Sept:</option>
+            <option >Oct:</option>
+            <option >Nov:</option>
+            <option >Dec:</option>
+
+        </select>
+        <select>
+                <option required>Day:</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
+                <option>31</option>
+        </select>
+        <select>
+                <option required>Year:</option>
+                <option required>Day:</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
+                <option>31</option>
+        </select>
+        <br>
+        <label for="terms">I agree to the terms and condition:</label>
+        <input  id="terms" required type="checkbox">
+        <br>
+        <br>
+        <button>Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,17 @@
+/* h1
+{
+    float:left;
+    width: 30px;
+
+}  */
+h5{
+    /* float:left; */
+    width:50%;
+
+}
+button,input{
+    float:left;
+}
+.winner{
+    color:green;
+}

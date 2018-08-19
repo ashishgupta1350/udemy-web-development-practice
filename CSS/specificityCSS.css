@@ -1,0 +1,8 @@
+p{
+    color:gold;
+    
+}
+div ~ p{
+    color:green;
+    !important;
+}

@@ -1,0 +1,36 @@
+h1{
+    font-family: sans-serif;
+    font-size:5.0em;
+    color:white;
+}
+body{
+    background: burlywood;
+    font-size:14px;
+    color:rgb(3, 114, 3);
+}
+span{
+    font-size:2.0em;
+    font-family: 'Indie Flower', cursive
+}
+p{
+    font-size:1.0em;
+    font-weight:bold;
+    font-family:'Anton',sans-serif;
+}
+
+/* Line height*/
+p{
+    line-height:1.5;
+    /* dynamic */
+}
+h1{
+    text-align:center;
+}
+p{
+    text-align: center;
+    text-decoration: underline;
+
+}
+span{
+    text-decoration: line-through;
+}

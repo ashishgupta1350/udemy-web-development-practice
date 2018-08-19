@@ -1,0 +1,31 @@
+h1{
+    color:red;
+    /* border-color: purple;
+    border-width: 5px;
+    border-style: dashed; */
+    border: 3px magenta dotted;
+}
+li{
+    color:brown;
+}   
+body{
+    /* background: url(https://media.deseretdigital.com/file/3914d68437?crop=top:0|left:0|width:1260|height:670|gravity:Center&quality=55&interlace=none&resize=width:1260&order=resize,crop&c=14&a=e0f131f0);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color:pink;
+}
+
+.someClass{
+    background: red;
+    border: 2px lightpink dotted;
+}
+#someId{
+    background-attachment: fixed;
+
+
+}
+/* The element selector h1, p, body */
+/* The class selector */
+/*The id selector */
+
+/* more important selectors*/
