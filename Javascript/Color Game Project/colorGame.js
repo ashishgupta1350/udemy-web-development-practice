@@ -1,33 +1,67 @@
-
-var h1=document.querySelector("h1");
 var colors=generateRandomColors(6);
 var numSquares=6;
-
-// Fix a color, hard code it, then write the important logic. Then put the correct logic into it:D
-var squares=document.querySelectorAll(".square");
-// var pickedColor=colors[3];
-var pickedColor=pickColor();
-var colorDisplay=document.querySelector("#colorDisplay");
-colorDisplay.textContent=pickedColor;
-var messageDisplay=document.querySelector("#messageDisplay");
-var changeColorBtn=document.querySelector("#changeColor");
-
-var modeButtons = document.querySelectorAll(".mode");
-
-for(var i=0;i<modeButtons.length;i++)
+var h1=document.querySelector("h1");
+    var colors=generateRandomColors(6);
+    var numSquares=6;
+    // Fix a color, hard code it, then write the important logic. Then put the correct logic into it:D
+    var squares=document.querySelectorAll(".square");
+    // var pickedColor=colors[3];
+    var pickedColor=pickColor();
+    var colorDisplay=document.querySelector("#colorDisplay");
+    colorDisplay.textContent=pickedColor;
+    var messageDisplay=document.querySelector("#messageDisplay");
+    var changeColorBtn=document.querySelector("#changeColor");
+    var modeButtons = document.querySelectorAll(".mode");
+function init()
 {
-        modeButtons[i].addEventListener("click",function(){
-        modeButtons[0].classList.remove("selected");
-        modeButtons[1].classList.remove("selected");
-        this.classList.add("selected");
-        this.textContent==="Easy"? numSquares=3:numSquares=6;
-            reset();
+    
+    changeColorBtn.addEventListener("click",function(){
+        reset();
     });
+    for(var i=0;i<squares.length;i++)
+    {
+        // add initial colors to square
+        squares[i].style.backgroundColor=colors[i];
+
+        // add click listners
+        squares[i].addEventListener("click", function(){
+            // we need the color of the tile clicked
+            var clickedColor=this.style.backgroundColor;
+            if(clickedColor===pickedColor)
+            {
+                this.style.backgroundColor=clickedColor;
+                // all others are also green
+                squares.forEach(function(mySquare){
+                    mySquare.style.backgroundColor=clickedColor;
+                });
+                messageDisplay.textContent="Correct"
+                h1.style.backgroundColor=pickedColor;
+                changeColorBtn.textContent="Play Again?"
+
+            }
+            else{
+                this.style.backgroundColor="#232323";
+                messageDisplay.textContent="Try Again";
+            }
+        });
+    }
+    for(var i=0;i<modeButtons.length;i++)
+    {
+            modeButtons[i].addEventListener("click",function(){
+            modeButtons[0].classList.remove("selected");
+            modeButtons[1].classList.remove("selected");
+            this.classList.add("selected");
+            this.textContent==="Easy"? numSquares=3:numSquares=6;
+                reset();
+        });
+    }
+
 }
+
 
 function reset(){
     colors=generateRandomColors(numSquares);
-    for(var i=0;i<numSquares;i++)
+    for(var i=0;i<squares.length;i++)
     {
         squares[i].style.backgroundColor=colors[i];
     }
@@ -52,37 +86,9 @@ function reset(){
 
 }
 
-changeColorBtn.addEventListener("click",function(){
-    reset();
-});
 
-for(var i=0;i<squares.length;i++)
-{
-    // add initial colors to square
-    squares[i].style.backgroundColor=colors[i];
 
-    // add click listners
-    squares[i].addEventListener("click", function(){
-        // we need the color of the tile clicked
-        var clickedColor=this.style.backgroundColor;
-        if(clickedColor===pickedColor)
-        {
-            this.style.backgroundColor=clickedColor;
-            // all others are also green
-            squares.forEach(function(mySquare){
-                mySquare.style.backgroundColor=clickedColor;
-            });
-            messageDisplay.textContent="Correct"
-            h1.style.backgroundColor=pickedColor;
-            changeColorBtn.textContent="Play Again?"
 
-        }
-        else{
-            this.style.backgroundColor="#232323";
-            messageDisplay.textContent="Try Again";
-        }
-    });
-}
 
 function pickColor()
 {
@@ -119,3 +125,5 @@ function randomColor()
     return string;
 
 }
+
+init();
