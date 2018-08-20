@@ -6,9 +6,27 @@
     <title>Other ToDos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <style>
+        .done{
+            text-decoration: line-through;
+            opacity:0.5; /* Not Needed */
+        }
+        /* Seperation of concerns, let js add class only */
+        .selected{
+            color:green;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <ul>
+        <li> Feed Dog </li>
+        <li> Feed other animals </li>
+        <li> Feed other animal to dog</li>
+
+
+    </ul>
+    <script src="OtherEventsJs.js"></script>
+
 </body>
 </html>
