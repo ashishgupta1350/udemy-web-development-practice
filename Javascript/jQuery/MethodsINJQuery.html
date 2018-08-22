@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Exercise</title>
+	<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
+</head>
+<body>
+	<h1>jQuery Methods </h1>
+	<input type="text" placeholder="Your Name">
+	<ul>
+		<li>Dairymilk</li>
+		<li>5Star</li>
+		<li>NotFiveStar</li>
+
+	</ul>
+
+	<script type="text/javascript" src="jquery.js"></script>
+</body>
+</html>
+
+<!-- 
+$("h1").text();
+"jQuery Methods "
+$("ul").text();
+"
+		Dairymilk
+		5Star
+		NotFiveStar
+		
+	"
+$("li").text();
+"Dairymilk5StarNotFiveStar"  -->
+
+<!-- $("li").text("New text");
+Object { 0: li
+, 1: li, 2: li
+, length: 3, prevObject: Object(1) }
+$("li").text("He is so doggy");
+Object { 0: li
+, 1: li, 2: li
+, length: 3, prevObject: Object(1) }
+#("ul").html();
+SyntaxError: illegal character[Learn More] debugger eval code:1
+$("ul").html();
+"
+		<li>He is so doggy</li>
+		<li>He is so doggy</li>
+		<li>He is so doggy</li>
+		
+	"
+$("ul").html("");
+Object { 0: ul
+, length: 1, prevObject: Object(1) }
+$("ul").html("<li> This is so cool </li>");
+Object { 0: ul
+, length: 1, prevObject: Object(1) }
+$("ul").html("<li> This is so cool </li> <li> This is so cool </li><li> This is so cool </li><li> This is so cool </li>");
+Object { 0: ul
+, length: 1, prevObject: Object(1) }
+$("ul").html("<li> This is so cool </li> <li> This is so cool </li><li> This is so cool </li><li> This is so cool </li>"); -->
+
+<!-- $("input").keypress(function(event)
+	{
+		if(event.which == 13)
+			{ 
+				alert("You hit enter")
+			}
+		}
+	) -->
+
+
+<!-- 
+$("input").keypress(function(event)
+{
+	if(event.which == 13)
+		{ 
+			alert("You hit enter")
+		}
+	}
+)
+Object { 0: input
+, length: 1, prevObject: Object(1) }
+$("h1").on("click", function(){console.log("clicked")})
+Object { 0: h1
+, length: 1, prevObject: Object(1) }
+clicked
+debugger eval code:1:32
+$("li").on("click",function(){console.log("clicked")})
+Object { 0: li
+, 1: li, 2: li
+, length: 3, prevObject: Object(1) }
+$("li").on("click",function(){$(this).css("backgroundColor","pink")})
+Object { 0: li
+, 1: li, 2: li
+, length: 3, prevObject: Object(1) }
+clicked
+debugger eval code:1:31
+$("li").on("mouseenter",function(){$(this).css("font-weight","bold")})
+Object { 0: li
+, 1: li, 2: li
+, length: 3, prevObject: Object(1) }
+$("li").on("mouseleave",function(){$(this).css("font-weight","normal")})
+Object { 0: li
+, 1: li, 2: li, length: 3, prevObject: Object(1) } -->
