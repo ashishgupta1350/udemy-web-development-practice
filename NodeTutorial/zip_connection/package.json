@@ -1,0 +1,14 @@
+{
+  "name": "zip_connection",
+  "version": "1.0.0",
+  "description": "A simple zip app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ashish Gupta",
+  "license": "ISC",
+  "dependencies": {
+    "cities": "^1.1.2"
+  }
+}
